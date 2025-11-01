@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forsqa Trading LLC — Wholesale & Resale | Houston, TX</title>
+  <meta name="description" content="Forsqa Trading LLC — wholesale & resale of collectibles and consumer goods in Houston, TX. We buy and we sell. Fast, fair offers and reliable sourcing.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a1a3a">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Forsqa Trading LLC — Wholesale & Resale">
+  <meta property="og:description" content="We buy & we sell collectibles and consumer goods. Houston, TX.">
+  <meta property="og:url" content="https://trading.forsqaholdings.com/">
+  <!-- Replace with a hosted image URL after deploy -->
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    /* --- Modern, clean, zero-dependency design --- */
+    :root{
+      --bg:#0a0f1a;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --brand:#1e40af;       /* Navy */
+      --accent:#3b82f6;      /* Electric blue */
+      --ring: rgba(59,130,246,.45);
+      --grad: radial-gradient(1200px 600px at 20% -10%, rgba(59,130,246,.16), transparent 40%),
+              radial-gradient(800px 500px at 90% 10%, rgba(30,58,138,.25), transparent 40%);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.6;
+      background-image: var(--grad);
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    .hero{
+      padding:64px 0 56px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .logo-wrap{display:inline-block;margin-bottom:24px}
+    .logo{width:min(720px,90vw);height:auto;display:block;margin-inline:auto;filter:drop-shadow(0 6px 32px rgba(59,130,246,.35))}
+    .kicker{letter-spacing:.18em;color:var(--muted);text-transform:uppercase;font-size:.82rem}
+    h1{margin:.3rem 0 0;font-size:clamp(2rem,6vw,3.2rem);line-height:1.1}
+    .tag{font-size:1.2rem;color:var(--muted);margin-top:.6rem}
+    .cta-bar{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:10px;padding:12px 18px;border-radius:999px;
+      background:linear-gradient(180deg,var(--accent),#2563eb);
+      color:white;border:none;font-weight:700;letter-spacing:.01em;
+      box-shadow:0 10px 30px rgba(59,130,246,.35);
+      transition:transform .08s ease, box-shadow .2s ease;
+    }
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 36px rgba(59,130,246,.45);text-decoration:none}
+    .btn.secondary{background:#111827;border:1px solid #1f2937;color:#e5e7eb;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{
+      background:linear-gradient(180deg, rgba(15,23,42,.9), rgba(15,23,42,.85));
+      border:1px solid rgba(148,163,184,.15);
+      border-radius:16px;padding:22px 20px;
+    }
+    h2{font-size:clamp(1.4rem,3.6vw,2rem);margin:36px 0 12px}
+    h3{margin:0 0 6px}
+    .list{margin:0;padding-left:18px;color:#cbd5e1}
+    .muted{color:var(--muted)}
+    .steps{counter-reset:step;display:grid;gap:16px}
+    .step{display:flex;gap:14px;align-items:flex-start}
+    .bullet{
+      counter-increment:step;
+      width:34px;height:34px;border-radius:999px;display:grid;place-items:center;
+      background:rgba(59,130,246,.15);color:var(--accent);font-weight:800;border:1px solid rgba(59,130,246,.35)
+    }
+    footer{
+      margin-top:40px;padding:28px 0;color:#cbd5e1;border-top:1px solid rgba(148,163,184,.15);
+    }
+    .footer-inner{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+    .pill{display:inline-block;padding:4px 10px;border:1px solid rgba(148,163,184,.25);border-radius:999px;color:#cbd5e1;background:rgba(148,163,184,.08)}
+    .contact-block{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+    .sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+    .section{padding:8px 0}
+    .divider{height:1px;background:linear-gradient(90deg, transparent, rgba(148,163,184,.2), transparent);margin:28px 0}
+  </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Forsqa Trading LLC",
+    "url": "https://trading.forsqaholdings.com/",
+    "email": "info@trading.forsqaholdings.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Houston",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Analytics 4 (optional) -->
+  <!-- TODO: Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <header class="hero container">
+    <span class="kicker">Forsqa Holdings Family</span>
+    <!-- Inline SVG wordmark to avoid external assets -->
+    <div class="logo-wrap" aria-hidden="true">
+      <svg class="logo" viewBox="0 0 1200 300" role="img">
+        <title>Forsqa Trading LLC</title>
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#3b82f6"/>
+          </linearGradient>
+        </defs>
+        <g fill="url(#g1)">
+          <!-- Main title -->
+          <text x="50" y="120" font-size="96" font-weight="800" letter-spacing="4" fill="#dbeafe">FORS</text>
+          <text x="390" y="120" font-size="96" font-weight="800" letter-spacing="4" fill="#dbeafe">Q</text>
+          <!-- Accent slash on Q -->
+          <rect x="458" y="72" width="58" height="16" rx="8" fill="#3b82f6" transform="rotate(38 458 72)"></rect>
+          <text x="460" y="120" font-size="96" font-weight="800" letter-spacing="4" fill="#dbeafe">A</text>
+          <text x="50" y="200" font-size="56" font-weight="700" letter-spacing="6" fill="#93c5fd">TRADING</text>
+          <text x="50" y="250" font-size="36" font-weight="700" letter-spacing="10" fill="#60a5fa">LLC</text>
+        </g>
+      </svg>
+    </div>
+    <h1>Wholesale &amp; resale of collectibles and consumer goods</h1>
+    <p class="tag">Houston, Texas • We buy &amp; we sell</p>
+    <div class="cta-bar">
+      <a class="btn" href="mailto:info@trading.forsqaholdings.com?subject=Forsqa%20Trading%20Inquiry">Contact Us</a>
+      <a class="btn secondary" href="#contact">Email & Location</a>
+    </div>
+    <div class="contact-block muted">
+      <span class="pill">info@trading.forsqaholdings.com</span>
+      <span class="pill">Houston, TX</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>What we trade</h3>
+          <ul class="list">
+            <li>Collectibles: trading cards, sneakers, streetwear, toys, vintage</li>
+            <li>Consumer goods: electronics, small appliances, general merchandise</li>
+            <li>Liquidation & bulk lots</li>
+          </ul>
+          <p class="muted">If it holds value, we’re interested.</p>
+        </div>
+        <div class="card">
+          <h3>We Buy</h3>
+          <p>Send a quick description, photos (if available), and your asking price. We make fast, fair offers and can arrange local pickup in Houston.</p>
+        </div>
+        <div class="card">
+          <h3>We Sell</h3>
+          <p>Looking for inventory? Tell us your want list or categories. We can source, bundle, and ship or arrange local handoff.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="bullet">1</div>
+          <div>
+            <strong>Reach out.</strong> Email <a href="mailto:info@trading.forsqaholdings.com">info@trading.forsqaholdings.com</a> with details of what you’re buying or selling.
+          </div>
+        </div>
+        <div class="step">
+          <div class="bullet">2</div>
+          <div>
+            <strong>Get a quote.</strong> We review quickly and provide pricing or availability. Local options for Houston, TX.
+          </div>
+        </div>
+        <div class="step">
+          <div class="bullet">3</div>
+          <div>
+            <strong>Deal, done.</strong> Cash/ACH and pickup or shipping arranged to your preference.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <h2>Why choose Forsqa Trading</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>Fast responses</strong><br><span class="muted">Same‑day quotes on most items.</span></div>
+        <div class="card"><strong>Fair pricing</strong><br><span class="muted">Transparent offers and sourcing.</span></div>
+        <div class="card"><strong>Houston‑based</strong><br><span class="muted">Local pickup and trusted network.</span></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Do you buy single items or only bulk?</h3>
+          <p>Both. From single high‑value items to full lots and pallets.</p>
+        </div>
+        <div class="card">
+          <h3>What areas do you serve?</h3>
+          <p>Primarily Houston, TX with shipping available nationwide.</p>
+        </div>
+        <div class="card">
+          <h3>How do I start?</h3>
+          <p>Email <a href="mailto:info@trading.forsqaholdings.com">info@trading.forsqaholdings.com</a> with photos and a quick description.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="muted">Email us and we’ll get back quickly.</p>
+      <div class="contact-block">
+        <a class="btn" href="mailto:info@trading.forsqaholdings.com?subject=Forsqa%20Trading%20Inquiry">Email: info@trading.forsqaholdings.com</a>
+        <span class="pill">Houston, TX</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Forsqa Trading LLC. All rights reserved. <span class="muted">Houston, TX</span></div>
+      <div class="muted">Not affiliated with third‑party brands; all trademarks belong to their respective owners.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
